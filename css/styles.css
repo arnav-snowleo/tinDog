@@ -2,18 +2,17 @@
 
 body{
     margin: 0;
-    background-color : black;   
 }
 
 h2{      
     line-height: 1.5;
 }
 
-p{
+/* COMBINED SELECTORS */
+#footer p{
     font-weight: 100;
     color: gray;
 }
-
 
 /* REUSABILITY */
  
@@ -21,7 +20,7 @@ body , h2 ,h3 , #meet-new-dogs , #cta{
     font-family: 'Montserrat', sans-serif;
 }
 
-#press , #new-testimonials {
+#press , #new-testimonials , body {
     background-color:  #ef8172;
 }
 
@@ -41,11 +40,16 @@ body , h2 ,h3 , #meet-new-dogs , #cta{
     font-weight: bold;     
 }
 
-/* id selectors */
+#pricing , #features , #footer{
+    background-color: white;    
+}
 
-#title{
+#title , #cta{
     background-color: #ff4c68;       
 }
+
+
+/* id selectors */
 
 #testimonial-image{
     border-radius: 100%;
@@ -60,7 +64,6 @@ body , h2 ,h3 , #meet-new-dogs , #cta{
 }
 
 #pricing{
-    background-color: white;
     padding: 6rem;
 }
 
@@ -80,7 +83,6 @@ body , h2 ,h3 , #meet-new-dogs , #cta{
 
 .navbar{
     padding-left: 0;
-
     padding-bottom: 4.5rem;
 }
 .navbar-brand{
@@ -107,8 +109,7 @@ body , h2 ,h3 , #meet-new-dogs , #cta{
 
 #features{
 
-    background-color: white;
-    padding: 7% 14%;
+    padding: 7% 15%;
     
      /* code to stck the title below the featues */
     position: relative;
@@ -146,9 +147,7 @@ body , h2 ,h3 , #meet-new-dogs , #cta{
 
 /* CTA */
 
-#cta{
-    background-color: #ff4c68;
-   
+#cta{    
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -173,12 +172,16 @@ body , h2 ,h3 , #meet-new-dogs , #cta{
 #footer{
     padding-top: 6%;
     padding-bottom: 6%;
-    background-color: white;
-  
 }
 
 .footer-icons{
     margin: 0.5rem;
+    color: black;
+}
+
+.footer-icons:hover{
+   color: #ff4c68;
+   cursor: pointer;
 }
 
 /* DOWNLOAD BUTTONS */
