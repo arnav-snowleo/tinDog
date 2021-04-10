@@ -1,0 +1,204 @@
+/* tag selectors */
+
+body{
+    margin: 0;
+    background-color : black;   
+}
+
+h2{      
+    line-height: 1.5;
+}
+
+p{
+    font-weight: 100;
+    color: gray;
+}
+
+
+/* REUSABILITY */
+ 
+body , h2 ,h3 , #meet-new-dogs , #cta{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#press , #new-testimonials {
+    background-color:  #ef8172;
+}
+
+#cta, #new-testimonials,#title , h2{
+    color: white;
+}
+
+#press, #pricing , #new-testimonials, #features , #cta , #footer{  
+    text-align: center;
+}
+
+#cta-heading , .navbar-brand, #meet-new-dogs ,h2{   
+    font-size: 3rem;      
+}
+
+#meet-new-dogs, .navbar-brand{
+    font-weight: bold;     
+}
+
+/* id selectors */
+
+#title{
+    background-color: #ff4c68;       
+}
+
+#testimonial-image{
+    border-radius: 100%;
+}
+
+#meet-new-dogs{
+    line-height: 1.5;   
+}
+
+#press{  
+    padding-bottom: 2%;
+}
+
+#pricing{
+    background-color: white;
+    padding: 6rem;
+}
+
+#pricing-text{
+    color: black;
+}
+
+/* class selectors */
+
+/* right and left padding not working */
+.container-fluid{
+
+    padding: 3% 15% 11% 15%;
+}
+
+/* NAVBAR */
+
+.navbar{
+    padding-left: 0;
+
+    padding-bottom: 4.5rem;
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+/* .my-pricing{
+    text-align: center;
+} */
+
+.my-phn-img{
+    width:60%;
+    transform: rotate(23deg);
+    right: 30%;
+
+    /* code to stack the title below the featues */
+    position: absolute;
+    /* z-index: -1; */
+}
+
+#features{
+
+    background-color: white;
+    padding: 7% 14%;
+    
+     /* code to stck the title below the featues */
+    position: relative;
+    z-index: 1;
+    
+}
+
+.my-feature-icon{
+    color: #ef8172;
+    margin: 7% 0;
+}
+
+.my-feature-icon:hover{
+    color: #ff4c68;
+}
+
+.press-photos{
+    width: 15%;
+    margin: 1.2rem;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+.my-pricing{
+   padding: 3% 2%;
+} 
+
+
+
+.card{
+    margin: 1.5rem auto;
+}
+
+/* CTA */
+
+#cta{
+    background-color: #ff4c68;
+   
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.cta-btn1{
+    margin-top: 4rem;   
+}
+
+.cta-btn2{
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+#cta-heading{
+   padding: 0 25%;
+      
+}
+
+
+/* FOOTER */
+
+#footer{
+    padding-top: 6%;
+    padding-bottom: 6%;
+    background-color: white;
+  
+}
+
+.footer-icons{
+    margin: 0.5rem;
+}
+
+/* DOWNLOAD BUTTONS */
+.my-download-buttons{
+    margin: 3% 5% 3% 0 ;
+
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:1028px) {
+
+    #title{
+        text-align:center;
+    }
+
+    .my-phn-img{
+        position: static;
+        transform: rotate(0deg);
+        margin-top: 10%;
+    }
+
+}
